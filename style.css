@@ -4,12 +4,15 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    background-color: #F5FFFF;
+}
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 8vh;
+    height: 8vh;
     background-image: url(images/nav-bg-edit.jpg);
     background-position: 0%;
     background-size: cover;
@@ -88,6 +91,29 @@ margin: 5px;
 
 .tile, .nav-links li{
     cursor: pointer;
+}
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+}
+
+table, th, td {
+    border: 1px solid;
+    background-color: white;
+    text-align: center;
+}
+
+table{
+    width: 80vw;
+    border-collapse: collapse;
+}
+
+#detailsTable th{
+    width: 30%;
+    padding: 10px;
 }
 
 @media screen and (max-width:768px){
