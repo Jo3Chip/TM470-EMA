@@ -8,6 +8,11 @@ body{
     background-color: #F5FFFF;
 }
 
+a{
+    color: black;
+    text-decoration: none;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -75,7 +80,7 @@ margin: 5px;
     background-color: blue;
     margin: auto;
     border-radius: 45px;
-    box-shadow: 5px 5px 10px black;
+    box-shadow: 5px 5px 10px #cfcfcf;
 }
 
 .tile p{
@@ -97,7 +102,7 @@ margin: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 92vh;
+    min-height: 75vh;
 }
 
 table, th, td {
@@ -113,6 +118,25 @@ table{
 
 #detailsTable th{
     padding: 10px;
+}
+
+.buttonContainer{
+    width: 50%;
+    margin-left: 45%;
+    display: flex;
+    justify-content: end;
+}
+
+button{
+    font-size: 2ch;
+    background-image: url(images/nav-bg-edit.jpg);
+    background-position: 0%;
+    background-size: cover;
+    padding: 10px 15px;
+    border-radius: 45px;
+    margin: 5px;
+    border: none;
+    box-shadow: 5px 5px 10px #cfcfcf;
 }
 
 @media screen and (max-width:768px){
@@ -144,7 +168,7 @@ table{
         z-index: 0;
     }
 
-    .tileSection{
+    .tileSection, .buttonContainer{
         flex-direction: column;
         flex-wrap: nowrap;
     }
