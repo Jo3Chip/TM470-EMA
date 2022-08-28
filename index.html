@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Party Planner</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <header>
         <nav>
-                <h1 class="logo">Party Planner</h1>
+            <h1 class="logo">Party Planner</h1>
             <ul class="nav-links">
                 <li id="partyCreate" class="nav-link">Create Party</li>
             </ul>
@@ -28,12 +30,24 @@
 
     <section class="tileSection">
 
-        <div class="tile"><a href="eventPage.html"><p>Example Party</p></a></div>
-        <div class="tile"><p>New Party</p></div>
+        <div class="tile"><a href="eventPage.html">
+                <p>Example Party</p>
+            </a></div>
+        <div class="tile">
+            <p>New Party</p>
+        </div>
 
     </section>
+
+    <?php
+        $sql = "SELECT * FROM Parties;";
+        $result = mysqli_query($conn, $sql);
+        $resultCheck = mysqli_num_rows($result);
+        echo result;
+    ?>
 
     <script src="navSlide.js"></script>
     <script src="createParty.js"></script>
 </body>
+
 </html>
